@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>   
+	<!-- 
+		GOING TO HAVE TO WRITE INSTRUCTIONS SOMEWHERE 
+		Though, bare bones, embeddable is not so bad either
+
+		No real gain from packing local copy of jsxgraph, 
+			except number ond variety of network requests
+
+		Browser testing required
+	-->
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>preisachjs Demo</title>
+	
+
+	<!-- JSXGraph styles -->
+	<link href="css/jsxgraph.css" rel="stylesheet" />
+	<!-- <link href="css/dark.css" rel="stylesheet" /> -->
+
+	<!-- <script src="js/lib/jsxgraphcore.js"></script> -->
+
+	<script type="text/javascript" charset="UTF-8" 
+			src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js"></script>
+
+	<!-- My JXG extensions   -->
+	<!-- <script src="dev/Hysteresis/JXG_extension.js"></script> -->
+
+	<!-- <script src="js/libs/jsxgraph-master/src/loadjsxgraph.js"></script>	 -->
+	<!-- <script src="js/libs/jsxgraph-master/src/parser/jessiecode.js"></script> -->
+
+	<!-- no! control.js is not the data-main...can't deal with the async -->
+	<!-- <script data-main="control_new" src="require.js"></script>	 -->
+	<script src="js/lib/require.js"></script>	
+	<!-- <script src="control_new.js"></script>		 -->
+
+	<!-- My styles -->
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<!-- <header> </header> -->
+	<!--		
+		<ul class="menu">
+			<li>point on a line</li>
+			<li>point on a II plane</li>
+			<li>2 points on a line</li>
+			<li>2 points on a II plane</li>
+			<li>switch on IO & II</li>
+		</ul>
+		
+		<div id=right>
+			<h1>preisachjs demonstration</h1>					
+			click and drag red dots.<br />
+			press shift + mouse wheel to zoom;<br>
+			press shift + drag to pan<br>		
+		</div>
+	-->		
+	<div id=left>
+		<div id="IO-plus-slide">
+			<div class="jxgbox"	id="jxg-InOut"></div>
+			<div class="jxgbox"	id="jxg-In"></div>
+			<div class="jxgbox"	id="jxg-PreisachPlane"></div>
+		</div>
+		<!-- <div class="jxgbox"	id="jxg-Out"></div> -->
+		<!-- <div class="jxgbox"	id="jxg-OO"></div> -->
+				
+	</div>
+
+	<script src="js/control.js"></script>			
+</body>
+</html>

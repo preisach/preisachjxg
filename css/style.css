@@ -1,0 +1,84 @@
+/* - */
+/* style.css */
+/* - */
+
+
+body, h1, .jxgbox {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.faGearIcon {
+	position:relative;
+}
+
+.faGearIcon:before {
+	font-family: FontAwesome;
+	font-size: 14pt;
+	top:0;
+	left:-5px;
+	/*padding-right:5px;*/	
+	content: "\f013"; 
+	/*:before{content:"\f085"}*/
+}
+
+button {
+	padding: 0;
+}
+
+
+
+.menu {
+	position:absolute;
+	margin: 0;
+	z-index: 1;
+}
+.menu {
+	
+}
+
+#left {
+	float:left;
+	height: 100vh;
+	/*width:100vh;*/
+	width: 50%;
+}
+
+#jxg-Out {
+	float:left;
+	width: 4vh;
+	height: 48vh;
+}
+#jxg-OO {
+	float:left;
+	width: 48vh;
+	height: 48vh;
+}
+
+#IO-plus-slide {
+	width: 48vh; /*calc(60% -4vh);*/
+	height: 100vh;
+	float: left;
+	/*margin:0px 20px;*/
+}
+
+#jxg-InOut {
+	width: 48vh;
+	height: 48vh;
+}
+
+#jxg-In {
+	width: 48vh;
+	height: 4vh;
+	/*height: calc(4vh -4pt);*/
+}
+
+#jxg-PreisachPlane {
+	width: 48vh;
+	height: 48vh;
+}
+
+.jxgbox {
+    /*background-color: #121220;*/
+    /*border: 3px #222 double;*/
+}
